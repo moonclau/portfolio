@@ -1,0 +1,9 @@
+.squares-stick{
+    background-image: url("./../../../public/images/cuadros.png");
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
