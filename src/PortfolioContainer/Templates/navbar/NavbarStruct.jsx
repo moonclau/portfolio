@@ -33,9 +33,9 @@ const NavbarStruct = () => {
             </NavLink>
             <div className="w-full lg:flex md:flex lg: flex-1 items center justify-center mr-2.5">
               <div className="flex-10 ">
-                <ul className="flex gap-8 mr-16 text-3xl	">
-                  {menus?.map((menu) => (
-                    <li className="py-7">
+                <ul className="flex gap-8 mr-16 text-3xl">
+                  {menus?.map((menu,index) => (
+                    <li className="py-7"  key={index} >
                       <NavLink to={menu?.link}>{menu?.name}</NavLink>
                     </li>
                   ))}
@@ -67,8 +67,8 @@ const NavbarStruct = () => {
         <div class="sm:hidden" id="mobile-menu">
           <div class="space-y-1 px-2 pb-2 pt-2 bg-[#ffce96]">
               <ul>
-                {menus?.map((menu) => (
-                <li className="block rounded-md text-center px-3 py-2 text-base font-medium hover:bg-orange-500 hover:text-white focus:outline-none ">
+                {menus?.map((menu,index) => (
+                <li key={index} className="block rounded-md text-center px-3 py-2 text-base font-medium hover:bg-orange-500 hover:text-white focus:outline-none ">
                   <NavLink to={menu?.link}>{menu?.name}</NavLink>
                 </li>
                 ))}

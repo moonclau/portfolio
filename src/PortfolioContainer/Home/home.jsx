@@ -5,17 +5,37 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { MdOutlineWavingHand } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
+import { TypeAnimation } from "react-type-animation";
 
 function home() {
   return (
     <div className="w-full flex md:flex-row flex-col-reverse bg-[#fff6e7]">
       <div className="w-full flex items-center justify-center justify-self-center text-center">
         <div className="grid grid-rows-1 ">
-          <div className="grid grid-cols-2 place-self-center">
-            <p className="text-3xl mr-1">Hola, soy Clau </p>
+          <div className="flex justify-center">
+            <p className="text-3xl mr-2">Hola, soy Clau </p>
             <MdOutlineWavingHand className="size-8" />
           </div>
-          <h1 className="text-5xl	text-orange-500">Desarrollador Web</h1>
+          <h1 className="text-lg	text-orange-500">
+            
+            <TypeAnimation
+              sequence={[
+                // Same substring at the start will only be typed out once, initially
+                "Desarrollador Web",
+                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                "Desarrollador FrontEnd",
+                1000,
+                "Desarrollador BackEnd",
+                1000,
+                "Desarrollador Fullstack",
+                1000,
+              ]}
+              wrapper="span"
+              speed={50}
+              style={{ fontSize: "2em", display: "inline-block" }}
+              repeat={Infinity}
+            />
+          </h1>
           <div className="text-lg text-left">
             Soy desarrollador fullstack con experiencia en la
             <br />
@@ -39,7 +59,7 @@ function home() {
         </div>
       </div>
       <div className="flex justify-center items-center text-center md:mr-2 md:pr-10 md:pb-0 pb-2">
-        <img alt="imagen logo" className="w-4/5 md:w-2/3" src={perfilFoto} />
+        <img alt="imagen logo" className="w-2/3" src={perfilFoto} />
       </div>
     </div>
   );
