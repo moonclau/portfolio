@@ -8,7 +8,7 @@ import { MdEmail } from "react-icons/md";
 
 function home() {
   return (
-    <div className="w-full grid grid-cols-2 gap-4 bg-[#fff6e7]">
+    <div className="w-full flex md:flex-row flex-col-reverse bg-[#fff6e7]">
       <div className="w-full flex items-center justify-center justify-self-center text-center">
         <div className="grid grid-rows-1 ">
           <div className="grid grid-cols-2 place-self-center">
@@ -38,8 +38,8 @@ function home() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center  mr-2 pr-10">
-        <img alt="imagen logo" className="w-4/5" src={perfilFoto} />
+      <div className="flex justify-center items-center text-center md:mr-2 md:pr-10 md:pb-0 pb-2">
+        <img alt="imagen logo" className="w-4/5 md:w-2/3" src={perfilFoto} />
       </div>
     </div>
   );
