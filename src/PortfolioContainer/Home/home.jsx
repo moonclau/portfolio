@@ -9,7 +9,7 @@ import { TypeAnimation } from "react-type-animation";
 
 function home() {
   return (
-    <div className="w-full flex md:flex-row flex-col-reverse bg-[#fff6e7]">
+    <div className="w-full flex md:flex-row flex-col-reverse bg-[#fff6e7] pb-10">
       <div className="w-full flex items-center justify-center justify-self-center text-center">
         <div className="grid grid-rows-1 ">
           <div className="flex justify-center">

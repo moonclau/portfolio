@@ -9,15 +9,14 @@ function App() {
   return (
     <div className='app'>
       <Routes>
-        <Route path='about-me' element={AboutMe}/>
         <Route path="/" element={<Template />}>
-        <Route index element={<Homepage />} />
-        <Route path="/AboutMe" element={<AboutMe />} />
-        <Route path="/ContactMe" element={<ContactMe />} />
-      </Route>
+          <Route index element={<Homepage />} />
+          <Route path="/AboutMe" element={<AboutMe />} />
+          <Route path="/ContactMe" element={<ContactMe />} />
+        </Route>
       </Routes>
     </div>
   )
 }
 
-export default App
+export default App;
