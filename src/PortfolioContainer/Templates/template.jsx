@@ -10,6 +10,7 @@ const Template = () => {
                 <div className="template-body">
                     <Outlet />
                     <Experience/>
+                    <AboutMe />
                 </div>
             </div>
         </div>

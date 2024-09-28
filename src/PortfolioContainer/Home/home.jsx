@@ -36,13 +36,13 @@ function home() {
               repeat={Infinity}
             />
           </h1>
-          <div className="text-lg text-left">
+          <div className="text-lg text-left m-5 md:w-full md:m-10">
             Soy desarrollador fullstack con experiencia en la
-            <br />
+            
             creación y mantenimiento de aplicaciones web.
           </div>
-          <div className="grid grid-cols-3 gap-4 mt-4">
-            <button className="flex items-center justify-center bg-[#fddab2] font-bold py-1 px-1 rounded-lg hover:bg-orange-500 active:bg-orange-500 focus:outline-none focus:ring focus:ring-orange-500 focus:text-white hover:text-white">
+          <div className="grid grid-cols-3 gap-4  ml-2  mr-2 md:ml-10 md:mr-10">
+            <button className="flex w-32 items-center justify-center bg-[#fddab2] font-bold py-1 px-1 rounded-lg hover:bg-orange-500 active:bg-orange-500 focus:outline-none focus:ring focus:ring-orange-500 focus:text-white hover:text-white">
               <FaGithub className="size-8 mr-2" />
               GitHub
             </button>

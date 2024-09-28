@@ -2,7 +2,7 @@ import { dataExperience } from "../data";
 function Experience() {
   return (
       
-      <div className="flex flex-col justify-center divide-y divide-orange-600  bg-[#ffce96] mb-10">
+      <div className="flex flex-col justify-center divide-y divide-orange-600  bg-[#ffce96] pb-10">
            <div className="flex justify-center ">
              <h1 className="mt-20 mb-5 text-3xl ">Mi trayectoria profesional</h1>
            </div>
