@@ -1,0 +1,75 @@
+/* NightLandscape.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000814;
+  overflow: hidden;
+}
+
+.night-landscape {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Fondo del paisaje (colina) */
+.hill {
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  height: 50%;
+  background: linear-gradient(to bottom, #001d3d, #000814);
+  border-radius: 50%;
+  left: -50%;
+}
+
+/* Definición de las luciérnagas */
+.firefly {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #ffdd57;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(255, 221, 87, 0.5);
+  animation: moveFirefly 4s linear infinite, glowFirefly 2s ease-in-out infinite alternate;
+}
+
+/* Posiciones iniciales de las luciérnagas */
+.firefly1 { top: 30%; left: 20%; }
+.firefly2 { top: 50%; left: 40%; }
+.firefly3 { top: 70%; left: 60%; }
+.firefly4 { top: 40%; left: 80%; }
+.firefly5 { top: 60%; left: 10%; }
+.firefly6 { top: 20%; left: 70%; }
+.firefly7 { top: 80%; left: 30%; }
+.firefly8 { top: 30%; left: 50%; }
+.firefly9 { top: 90%; left: 80%; }
+.firefly10 { top: 50%; left: 90%; }
+
+/* Animación del movimiento de las luciérnagas */
+@keyframes moveFirefly {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(30px, -30px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* Animación del parpadeo */
+@keyframes glowFirefly {
+  0%, 100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+}
