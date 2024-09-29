@@ -1,10 +1,6 @@
 import "./home.css";
-import sunFlower from "./../../../public/images/girasol.svg";
 import perfilFoto from "./../../../public/images/perfilfoto.png";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { MdOutlineWavingHand } from "react-icons/md";
-import { MdEmail } from "react-icons/md";
+import { FaLinkedin,MdEmail,MdOutlineWavingHand,FaGithub } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 
 function home() {
