@@ -4,8 +4,8 @@ import { FaGithubSquare } from "react-icons/fa";
 import { FaFileCsv } from "react-icons/fa6";
 const SocialMedia = () => {
     return (
-        <div className="social-media relative h-full w-7 ml-2 mr-2">
-            <div className="absolute inset-x-0 bottom-28 ">
+        <div className="social-media md:relative h-full w-7 ml-2 mr-2">
+            <div className="md:absolute md:inset-x-0 md:bottom-28 ">
                 <FaLinkedin className="mb-3 size-7 "/>
                 <FaGithubSquare className="mb-3 size-7 "/>
                 <IoMdMail className="mb-3 size-7 "/>

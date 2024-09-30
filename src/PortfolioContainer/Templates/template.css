@@ -5,4 +5,30 @@
     width: 100%;
     border: 1px solid;
   }
-  
+/* .icon-color-dark .social-media{
+ color: white;
+} */
+
+.icon-color-dark {
+ .cd{
+  fill: #FFFFFF !important;
+ }
+ .slash{
+  fill: #FFFFFF !important;
+ }
+ .e{
+  fill: #FFFFFF !important;
+ }
+ .v{
+  fill: #FFFFFF !important;
+ }
+ .Vector_right{
+  fill: #FFFFFF !important;
+ }
+ .Vector_left{
+  fill: #FFFFFF !important;
+ }
+ .cursor{
+  fill: #FFFFFF !important;
+ }
+}

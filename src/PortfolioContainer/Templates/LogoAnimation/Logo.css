@@ -1,10 +1,61 @@
-#cursor{
-    animation: blink 0.7s infinite step-end;
-    /* fill: #cd4343 !important; */
+
+
+.logo_illustration.visible {
+  opacity: 1;
 }
-/* Animación del parpadeo */
+.cursor{
+  animation: blink 4s normal ;
+  opacity: 0;
+}
+.Vector_left{
+  animation: show_letter 0.4s normal ;
+  opacity: 1;
+}
+.cd{
+  animation: show_letter 0.8s normal ;
+  opacity: 1;
+}
+.e{
+  animation: show_letter 1.4s normal ;
+  opacity: 1;
+}
+.v{
+  animation: show_letter 2s normal ;
+  opacity: 1;
+
+}
+.slash{
+  animation: show_letter 2.5s normal ;
+  opacity: 1;
+}
+.Vector_right{
+  animation: show_letter 3s normal ;
+  opacity: 1;
+}
+/* Animation moving and blinking*/
 @keyframes blink {
-    50% {
-      opacity: 0;
-    }
+  0%{ opacity: 1; transform: translateX(-99%);}
+  5%{ opacity: 0;}
+  10%{ opacity: 1; }
+  15%{ opacity: 0; transform: translateX(-80%);}
+  20%{ opacity: 1; }
+  25%{ opacity: 0;}
+  30%{ opacity: 1; transform: translateX(-58%);}
+  35%{ opacity: 0;}
+  40%{ opacity: 1; }
+  45%{ opacity: 0; transform: translateX(-46%); }
+  50% { opacity: 1; }
+  55%{ opacity: 0;}
+  60%{ opacity: 1; transform: translateX(-32%); }
+  65%{ opacity: 0;}
+  70%{ opacity: 1; }
+  75%{ opacity: 0; transform: translateX(-20%);}
+  80%{ opacity: 1; }
+  85%{ opacity: 0;}
+  90%{ opacity: 1; transform: translateX(-0%);}
+} 
+@keyframes show_letter {
+  to{
+    opacity: 0;
+  }
 }
