@@ -1,18 +1,28 @@
-// import NavbarStruct from "./navbar/NavbarStruct.jsx";
+import NavbarStruct from "./navbar/NavbarStruct.jsx";
 // import { Outlet } from "react-router-dom";
 import SocialMedia from "./SocialMedia/SocialMedia.jsx";
 import "./template.css";
 import Logo from "./LogoAnimation/Logo.jsx";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoMdMoon } from "react-icons/io";
 import { FaSun } from "react-icons/fa6";
+import "../../i18n.jsx";
+import { useTranslation } from "react-i18next";
 
 const Template = () => {
-  const [languaje, setLanguaje] = useState("esp");
+    //Change background
   const [isDark, setIsDark] = useState(true);
+  //Change language
+  const [userLanguage, setUserLanguage] = useState("en"); // Estado para el idioma
+  const { t, i18n } = useTranslation();
+  //change background with button
   const handleBackground = () => {
     setIsDark(!isDark);
   };
+  useEffect(()=>{
+    // change language with user navegator
+    i18n.changeLanguage(navigator.language);
+  },[]);
   return (
     <div
       className={`page w-full md:overflow-hidden md:h-screen ${
@@ -27,7 +37,11 @@ const Template = () => {
           <div className="col-start-5 w-12 grid grid-cols-2 gap-4 mr-10 md:mr-20  justify-center justify-self-center  align-middle ">
             <button>es</button>
             <button className="" onClick={handleBackground}>
-                {isDark? <FaSun className="size-7"/>:<IoMdMoon className="size-7"/>}
+              {isDark ? (
+                <FaSun className="size-7" />
+              ) : (
+                <IoMdMoon className="size-7" />
+              )}
             </button>
           </div>
         </div>
@@ -36,7 +50,9 @@ const Template = () => {
         <div className="social-media">
           <SocialMedia />
         </div>
-        <div className="about-me w-2/5 ">about me</div>
+        <div className="about-me w-2/5 ">
+        <NavbarStruct/>
+        {t('aboutMe')}</div>
         <div className=" este">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
           tempus volutpat tincidunt. Ut tortor urna, consectetur non neque at,

@@ -1,7 +1,6 @@
-import { FaLinkedin } from "react-icons/fa6";
+import { FaLinkedin ,FaFileCsv} from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { FaGithubSquare } from "react-icons/fa";
-import { FaFileCsv } from "react-icons/fa6";
 const SocialMedia = () => {
     return (
         <div className="social-media md:relative h-full w-7 ml-2 mr-2">
