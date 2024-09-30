@@ -1,5 +1,5 @@
 /* NightLandscape.css */
-body, html {
+/* body, html {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -8,7 +8,7 @@ body, html {
   align-items: center;
   background: #000814;
   overflow: hidden;
-}
+} */
 
 .night-landscape {
   position: relative;
