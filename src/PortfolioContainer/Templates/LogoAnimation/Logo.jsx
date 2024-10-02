@@ -14,7 +14,7 @@ function Logo() {
   }, []);
 
   return (
-    <div className="ml-12 ">
+    <div className="ml-12 mt-2">
       <svg
         className={`logo_illustration ${isVisible ? 'visible' : ''}`}
         width="120"

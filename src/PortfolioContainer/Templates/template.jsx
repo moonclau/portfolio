@@ -1,4 +1,4 @@
-import NavbarStruct from "./navbar/NavbarStruct.jsx";
+import NavbarStruct from "./Navbar/NavbarStruct.jsx";
 // import { Outlet } from "react-router-dom";
 import SocialMedia from "./SocialMedia/SocialMedia.jsx";
 import "./template.css";
@@ -17,25 +17,41 @@ const Template = () => {
   const { t, i18n } = useTranslation();
   //change background with button
   const handleBackground = () => {
+    let lineMenu =document.getElementById("line");
+    if(isDark){
+      lineMenu.classList.replace("line-dark","line-white");
+    }else{
+      lineMenu.classList.replace("line-white","line-dark");
+    }
     setIsDark(!isDark);
   };
   useEffect(()=>{
     // change language with user navegator
     i18n.changeLanguage(navigator.language);
   },[]);
+
+  // change language
+  const changeLanguage = () => {
+    if(userLanguage === "es"){
+      setUserLanguage("en"); // update language
+    }else{
+      setUserLanguage("es"); // update language
+    }
+    i18n.changeLanguage(userLanguage); // changed with i18n
+  };
   return (
     <div
       className={`page w-full md:overflow-hidden md:h-screen ${
         isDark
           ? "bg-gradient-to-br from-slate-900 to-sky-800 icon-color-dark text-white fill-white"
-          : "bg-white"
+          : "bg-dark"
       }`}
     >
       <div className="menu w-full h-14 ">
         <div className="grid grid-cols-5 gap-4">
-          <Logo className="col-span-4" />
-          <div className="col-start-5 w-12 grid grid-cols-2 gap-4 mr-10 md:mr-20  justify-center justify-self-center  align-middle ">
-            <button>es</button>
+          <Logo className="col-span-4 " />
+          <div className="col-start-5 w-12 grid grid-cols-2 gap-4 mr-10 md:mr-20 justify-center justify-self-center ">
+            <button onClick={changeLanguage} >{userLanguage}</button>
             <button className="" onClick={handleBackground}>
               {isDark ? (
                 <FaSun className="size-7" />
@@ -50,10 +66,10 @@ const Template = () => {
         <div className="social-media">
           <SocialMedia />
         </div>
-        <div className="about-me w-2/5 ">
-        <NavbarStruct/>
-        {t('aboutMe')}</div>
-        <div className=" este">
+        <div className="about-me w-1/2 ">
+          <NavbarStruct/>
+        </div>
+        <div className=" este ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
           tempus volutpat tincidunt. Ut tortor urna, consectetur non neque at,
           elementum iaculis dui. Morbi pretium augue in mi accumsan vulputate.

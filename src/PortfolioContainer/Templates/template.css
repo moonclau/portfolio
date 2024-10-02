@@ -28,3 +28,10 @@
   fill: #FFFFFF !important;
  }
 }
+.line-dark{
+  border-color: #FFFFFF;
+}
+.line-white{
+  border-color: #050505;
+
+}
