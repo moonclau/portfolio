@@ -1,4 +1,4 @@
-import NavbarStruct from "./navbar/NavbarStruct.jsx";
+import NavbarStruct from "./Navbar/NavbarStruct.jsx";
 import { Outlet } from "react-router-dom";
 import Experience from "../Experience/Experience.jsx";
 import AboutMe from "../AboutMe/AboutMe.jsx";
