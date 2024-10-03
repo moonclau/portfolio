@@ -47,8 +47,8 @@ const resources = {
       
       aboutMe:"Sobre mi",
       description: "Este es un ejemplo de soporte multilingüe.",
-      certificates:"Certificates",
-      contactMe:"Contact me",
+      certificates:"Certificados",
+      contactMe:"Contáctame",
       experience:"Experiencia",
       introByMe:"Con mi experiencia como programador fullstack, puedo transformar tus ideas en realidad. Desde un diseño limpio y amigable para páginas estáticas hasta proyectos web ambiciosos y complejos.",
       ocupation:"Desarrollador Web",
