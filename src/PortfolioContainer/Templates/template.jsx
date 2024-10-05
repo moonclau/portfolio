@@ -10,7 +10,7 @@ import SocialMedia from "./SocialMedia/SocialMedia.jsx";
 import "../../i18n.jsx";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "../../imports/ThemeContext.jsx";
-
+import AboutMePage from "../AboutMe/AboutMe.jsx";
 const Template = () => {
     //Change background
     const { isDarkMode, toggleTheme } = useTheme();
@@ -36,7 +36,7 @@ const Template = () => {
         className={`page w-full md:overflow-hidden md:h-screen ${
           isDarkMode
             ? "bg-gradient-to-br from-slate-900 to-sky-800 icon-color-dark text-white fill-white"
-            : "bg-dark"
+            : "bg-gradient-to-t from-sky-400 to-sky-50"
         }`}
       >
         <div className="menu w-full h-14 ">
@@ -61,14 +61,8 @@ const Template = () => {
           <div className="about-me w-1/2 ">
             <NavbarStruct name={isDarkMode}/>
           </div>
-          <div className=" este ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            tempus volutpat tincidunt. Ut tortor urna, consectetur non neque at,
-            elementum iaculis dui. Morbi pretium augue in mi accumsan vulputate.
-            Nulla sodales magna quis sapien consequat ultrices. Suspendisse
-            condimentum lectus sit amet erat tincidunt hendrerit. Mauris
-            sollicitudin ac lectus sed interdum. Mauris dapibus ex nisi, vel
-            tempus purus vulputate non. In vel massa nulla.
+          <div className="leading-4	overflow-x-hidden	overflow-y-scroll w-full">
+            <AboutMePage/>
           </div>
         </div>
         <div />
