@@ -1,13 +1,28 @@
 import { useTranslation } from "react-i18next";
-import Photo from '../../../public/images/perfilfoto.png';
+import Photo from "../../../public/images/perfil.png";
 function AboutMe() {
   //changed languague
   const { t } = useTranslation();
   return (
-    <div className="">
-        <div className="w-full flex justify-center">
-            <img className="w-2/5 " src={Photo} alt="perfil foto"/>
-        </div>
+    <div className="w-full grid">
+      <div className="w-full flex justify-center">
+        <img className="w-2/5 " src={Photo} alt="perfil foto" />
+      </div>
+      <div className="text-2xl flex justify-center font-bold m-2">
+        Hola Soy Claudia. ¡Bienvenido a mi pedazito de web!
+      </div>
+      <div className="ml-28 mr-28 text-xl">
+        <p>
+          Tengo 4 años trabajando como desarrollador fullstack en la creación y
+          mantenimiento de aplicaciones web.En mis tiempos libres, disfruto diseñando landing pages, lo que me
+          permite explorar mi creatividad y mejorar mis habilidades de diseño.
+        </p>
+        <p>
+          Me apasionaona el aprendizaje continuo y la mejora de mis habilidades
+          para contribuir de manera significativa a proyectos digitales.
+        </p>
+      </div>
+
       {/* <div className="w-full flex md:flex-row flex-col-reverse  ">
         <div className="w-full p-5 md:ml-32 md:mt-20 justify-center items-center">
           <h1 className="text-2xl font-bold m-2">
@@ -28,9 +43,9 @@ function AboutMe() {
             digitales.
           </p>
         </div> */}
-        <div className="flex justify-center items-center text-center md:mr-2 md:pr-10 md:pb-0 pb-2">
-          {/* <img className="w-2/3	" alt="imagen logo" src={Draw} /> */}
-        </div>
+      <div className="flex justify-center items-center text-center md:mr-2 md:pr-10 md:pb-0 pb-2">
+        {/* <img className="w-2/3	" alt="imagen logo" src={Draw} /> */}
+      </div>
       {/* </div> */}
     </div>
   );

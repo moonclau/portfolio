@@ -11,6 +11,7 @@ import "../../i18n.jsx";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "../../imports/ThemeContext.jsx";
 import AboutMePage from "../AboutMe/AboutMe.jsx";
+import Experience from "../Experience/Experience.jsx";
 const Template = () => {
     //Change background
     const { isDarkMode, toggleTheme } = useTheme();
@@ -63,6 +64,7 @@ const Template = () => {
           </div>
           <div className="leading-4	overflow-x-hidden	overflow-y-scroll w-full">
             <AboutMePage/>
+            <Experience/>
           </div>
         </div>
         <div />
