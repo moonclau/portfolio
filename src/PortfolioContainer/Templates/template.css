@@ -1,3 +1,16 @@
+.este {
+    line-height: 1em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    border: 1px solid;
+  }
+.scroller-dark{
+  scrollbar-color: gray #02335c;
+}
+.scroller-white{
+  scrollbar-color: gray #b8e5fa;
+}
 .icon-color-dark {
  .cd{
   fill: #FFFFFF !important;

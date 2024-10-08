@@ -1,15 +1,15 @@
-.squares-stick{
-    background-image: url("./../../../public/images/cuadros.png");
-    width: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    justify-content: left;
-    align-items: left;
-    text-align: left;
+.active-link{
+    color:#3780e6;
+    background-color: yellowgreen;
 }
-.font-name{
-    font-family: "League Spartan", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+.nav-link {
+    color: rgb(22, 71, 170);
+    text-decoration: none;
+    padding: 10px;
   }
+  
+  .nav-link.active {
+    color: red; /* Cambia a tu color deseado */
+    font-weight: bold;
+  }
+  

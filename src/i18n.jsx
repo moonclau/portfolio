@@ -17,6 +17,7 @@ const resources = {
       experience:"Experience",
       //f
       //g
+      greeting:"Hi I'm Claudia, welcome to my little piece of web!",
       //h
       //i
       introByMe:"With my experience as a fullstack programmer, I can transform your ideas into reality. From a clean and friendly design for static pages to ambitious and complex web projects.",
@@ -50,6 +51,7 @@ const resources = {
       certificates:"Certificados",
       contactMe:"Contáctame",
       experience:"Experiencia",
+      greeting:"Hola Soy Claudia. ¡Bienvenido a mi pedazito de web!",
       introByMe:"Con mi experiencia como programador fullstack, puedo transformar tus ideas en realidad. Desde un diseño limpio y amigable para páginas estáticas hasta proyectos web ambiciosos y complejos.",
       ocupation:"Desarrollador Web",
       projects:"Proyectos",

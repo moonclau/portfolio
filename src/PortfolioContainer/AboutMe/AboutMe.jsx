@@ -4,23 +4,28 @@ function AboutMe() {
   //changed languague
   const { t } = useTranslation();
   return (
-    <div className="w-full grid">
-      <div className="w-full flex justify-center">
+    <section id="about-me" className="w-full h-screen grid mt-20">
+      <div className="w-full h-fit flex justify-center">
         <img className="w-2/5 " src={Photo} alt="perfil foto" />
       </div>
-      <div className="text-2xl flex justify-center font-bold m-2">
-        Hola Soy Claudia. ¡Bienvenido a mi pedazito de web!
-      </div>
-      <div className="ml-28 mr-28 text-xl">
-        <p>
-          Tengo 4 años trabajando como desarrollador fullstack en la creación y
-          mantenimiento de aplicaciones web.En mis tiempos libres, disfruto diseñando landing pages, lo que me
-          permite explorar mi creatividad y mejorar mis habilidades de diseño.
-        </p>
-        <p>
-          Me apasionaona el aprendizaje continuo y la mejora de mis habilidades
-          para contribuir de manera significativa a proyectos digitales.
-        </p>
+      <div className="ml-20 mr-20">
+        <div className="text-2xl  justify-center text-center font-bold ">
+         <h2 className="m-1">
+          Hola Soy Claudia.
+        </h2> 
+        <h2 className="mb-5">
+        ¡Bienvenido a mi pedazito de web!
+        </h2>
+        </div>
+        <div className="w-full flex text-xl justify-center text-justify">
+          <p >
+            Tengo 4 años trabajando como desarrollador fullstack en la creación y
+            mantenimiento de aplicaciones web.En mis tiempos libres, disfruto diseñando landing pages, lo que me
+            permite explorar mi creatividad y mejorar mis habilidades de diseño.
+            Me apasionaona el aprendizaje continuo y la mejora de mis habilidades
+            para contribuir de manera significativa a proyectos digitales.
+          </p>
+        </div>
       </div>
 
       {/* <div className="w-full flex md:flex-row flex-col-reverse  ">
@@ -47,7 +52,7 @@ function AboutMe() {
         {/* <img className="w-2/3	" alt="imagen logo" src={Draw} /> */}
       </div>
       {/* </div> */}
-    </div>
+    </section>
   );
 }
 export default AboutMe;
