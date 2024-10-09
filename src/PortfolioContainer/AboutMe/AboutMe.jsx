@@ -11,20 +11,14 @@ function AboutMe() {
       <div className="ml-20 mr-20">
         <div className="text-2xl  justify-center text-center font-bold ">
          <h2 className="m-1">
-          Hola Soy Claudia.
+         {t("greeting")}
         </h2> 
         <h2 className="mb-5">
-        ¡Bienvenido a mi pedazito de web!
+          {t("welcome")}
         </h2>
         </div>
         <div className="w-full flex text-xl justify-center text-justify">
-          <p >
-            Tengo 4 años trabajando como desarrollador fullstack en la creación y
-            mantenimiento de aplicaciones web.En mis tiempos libres, disfruto diseñando landing pages, lo que me
-            permite explorar mi creatividad y mejorar mis habilidades de diseño.
-            Me apasionaona el aprendizaje continuo y la mejora de mis habilidades
-            para contribuir de manera significativa a proyectos digitales.
-          </p>
+          <p >{t("describingMyself")}</p>
         </div>
       </div>
 

@@ -1,15 +1,27 @@
-.active-link{
-    color:#3780e6;
-    background-color: yellowgreen;
-}
-.nav-link {
-    color: rgb(22, 71, 170);
-    text-decoration: none;
-    padding: 10px;
+
+  /* a.active {
+    background: #265301;
+    color: #cdfeaa;
+  } */
+  .menu-profile-dark a.active {
+    span{
+     background-color: white;
+     width: 48px;   
+    }
+    p{
+        color: white;
+        font-size: 24px;
+        line-height: 32px;
+    }
   }
-  
-  .nav-link.active {
-    color: red; /* Cambia a tu color deseado */
-    font-weight: bold;
+  .menu-profile a.active {
+    span{
+     background-color: #3780e6;
+     width: 48px;   
+    }
+    p{
+        color: #3780e6;
+        font-size: 24px;
+        line-height: 32px;
+    }
   }
-  

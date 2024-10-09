@@ -9,15 +9,16 @@ const resources = {
       aboutMe:"About me",
       //b
       //c
+      carrer:"My professional career",
       certificates:"Certificates",
       contactMe:"Contact me",
       //d
-      description: "This is an example of multilingual support.",
+      describingMyself: "I have 4 years working as a fullstack developer in the creation and maintenance of web applications. In my spare time, I enjoy designing landing pages, which allows me to explore my creativity and improve my design skills.my creativity and improve my design skills. I am passionate about continuous learning and improving my skills to contribute meaningfully to digital projects. To contribute in a meaningful way to digital projects.",
       //e
       experience:"Experience",
       //f
       //g
-      greeting:"Hi I'm Claudia, welcome to my little piece of web!",
+      greeting:"Hi I'm Claudia,",
       //h
       //i
       introByMe:"With my experience as a fullstack programmer, I can transform your ideas into reality. From a clean and friendly design for static pages to ambitious and complex web projects.",
@@ -36,7 +37,7 @@ const resources = {
       skills:"Skills",
       //t
       //w
-      welcome: "Welcome to our site!",
+      welcome: "welcome to my little piece of web!",
       //x
       //y
       //z
@@ -47,16 +48,17 @@ const resources = {
     translation: {
       
       aboutMe:"Sobre mi",
-      description: "Este es un ejemplo de soporte multilingüe.",
+      describingMyself: "Tengo 4 años trabajando como desarrollador fullstack en la creación y mantenimiento de aplicaciones web.En mis tiempos libres, disfruto diseñando landing pages, lo que me permite explorar mi creatividad y mejorar mis habilidades de diseño. Me apasionaona el aprendizaje continuo y la mejora de mis habilidades para contribuir de manera significativa a proyectos digitales.",
+      carrer:"Mi trayectoria profesional",
       certificates:"Certificados",
       contactMe:"Contáctame",
       experience:"Experiencia",
-      greeting:"Hola Soy Claudia. ¡Bienvenido a mi pedazito de web!",
+      greeting:"Hola Soy Claudia.",
       introByMe:"Con mi experiencia como programador fullstack, puedo transformar tus ideas en realidad. Desde un diseño limpio y amigable para páginas estáticas hasta proyectos web ambiciosos y complejos.",
       ocupation:"Desarrollador Web",
       projects:"Proyectos",
       skills:"Habilidades",
-      welcome: "¡Bienvenido a nuestro sitio!",
+      welcome: "¡Bienvenido a mi pedazito de web!",
     }
   }
 };
