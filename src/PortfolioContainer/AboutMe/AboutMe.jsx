@@ -4,7 +4,7 @@ function AboutMe() {
   //changed languague
   const { t } = useTranslation();
   return (
-    <section id="about-me" className="w-full h-screen grid mt-20">
+    <section id="about-me" className="w-full grid mt-20">
       <div className="w-full h-fit flex justify-center">
         <img className="w-2/5 " src={Photo} alt="perfil foto" />
       </div>

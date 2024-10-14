@@ -28,7 +28,7 @@ const resources = {
       //m
       //n
       //o
-      ocupation:"Web developer",
+      ocupation:"Full Stack developer",
       //p
       projects:"Projects",
       //q
@@ -55,7 +55,7 @@ const resources = {
       experience:"Experiencia",
       greeting:"Hola Soy Claudia.",
       introByMe:"Con mi experiencia como programador fullstack, puedo transformar tus ideas en realidad. Desde un diseño limpio y amigable para páginas estáticas hasta proyectos web ambiciosos y complejos.",
-      ocupation:"Desarrollador Web",
+      ocupation:"Desarrollador Full Stack",
       projects:"Proyectos",
       skills:"Habilidades",
       welcome: "¡Bienvenido a mi pedazito de web!",
