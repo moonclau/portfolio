@@ -40,13 +40,16 @@ const Template = () => {
 
   // Function to handle the activation of a link.
   const handleSetActive = (to) => {
-    console.log(to);
-    if(to=== 'hero'){
-      setIsHeroActive(true);
-    }else if(to === 'about-me'){
-      setIsHeroActive(false);
-    }
-  };
+    // console.log(to);
+    const backgroundNight = document.getElementsByClassName("night_landscape");
+     if(to=== 'hero'){
+       setIsHeroActive(true);
+     }else if(to === 'about-me'){
+       setIsHeroActive(false);
+      //  backgroundNight.style.visible= "hidden";
+      // backgroundNight.style.position= "relative";
+     }
+   };
 
   return (
     <div
@@ -56,7 +59,7 @@ const Template = () => {
           : "bg-[#b8e5fa] "
       }`}
     >
-      <div className="menu w-full h-14 fixed">
+      <div className={`menu w-full h-14  ${isHeroActive? "relative":"transform transition-opacity duration-500 fixed opacity-100 visible"}`}>
         <div className="grid grid-cols-5 gap-4">
           <Link
               to="hero"
@@ -80,11 +83,16 @@ const Template = () => {
         </div>
       </div>
       <div>
-        <Hero/>
-        <div className="fixed left-0">
+
+        <Element name="hero">
+          <Hero/>
+        </Element>
+        <div className={`left-0 ${isHeroActive? "":"fixed"}`}>
           <SocialMedia />
         </div>
-        <div className={`fixed w-2/5 ${isHeroActive ? "invisible": "" }`}>
+        <div className={`w-2/5 fixed z-10 transform transition-opacity duration-500 ${
+          !isHeroActive ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}>
           <NavbarStruct setActiveScroll={handleSetActive}/>
         </div>
       </div>

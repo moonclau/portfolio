@@ -17,8 +17,10 @@ function AboutMe() {
           {t("welcome")}
         </h2>
         </div>
-        <div className="w-full flex text-xl justify-center text-justify">
-          <p >{t("describingMyself")}</p>
+        <div className="w-full text-xl justify-center text-justify">
+          <div>{t("describingMyself")}</div>
+          <div className="mt-3">{t("describingMyself1")}</div>
+          <div className="mt-3" >{t("describingMyself2")}</div>
         </div>
       </div>
 

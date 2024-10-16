@@ -45,10 +45,6 @@ function Experience() {
   ];
   return (
     <section id="experience" className="w-full md:m-5 md:mt-20 ">
-      {/* <h1 className="text-3xl mb-5 text-center mt-20">{t("carrer")}</h1>
-      <div className="w-full flex justify-center align-middle justify-items-center mb-10">
-        <div className="w-4/5 h-1  bg-[#3780e6] mb-5 "></div>
-      </div> */}
       <ul className="w-11/12 ml-10">
         {dataExperience?.map((job) => (
           <li key={job.id} className={`flex flex-row group mb-5 rounded-md pa-2 ${isDarkMode ? "hover:bg-slate-900/50  " : "hover:bg-sky-400/20"} `}>
