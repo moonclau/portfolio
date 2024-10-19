@@ -1,8 +1,5 @@
-#hero{
-    /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
-}
+
 .night_landscape{
-    /* position: relative;  */
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -77,13 +74,14 @@
         transform: scale(2);
     }
 }
-#hero{
-    /*overflow: hidden;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
-    */
-}
+.day_landscape #title{
+    position: absolute;
+    top:40%;
+    color:#fff;
+    padding-left: 112px;
 
-#title{
+}
+.night_landscape #title{
     position: absolute;
     top:30%;
     left: 0;
@@ -101,11 +99,102 @@
     -webkit-text-fill-color: transparent;
 } */
 
-/* #stars:after{
-    content: '';
-    position: absolute;
-    top:2000px;
-    width: 1px;
-    height: 1px;
-    background: transparent;
-} */
+/*Day lanscape Kite*/
+#papalote{
+    /* animation: kite 2s infinite ease-in-out; */
+    animation: kite-move 4s infinite ease-in-out;
+
+}
+
+@keyframes kite-move {
+    0%{
+        transform: translateX(0%);
+    }
+    20%{
+        transform: rotateX(15deg);
+    }
+    30%{
+        transform: translatey(-10%);
+    }
+    40%{
+        transform: rotateX(25deg);
+    }
+    50%{
+        transform: translateX(5%);
+
+    }
+    80%{
+        transform: translateX(-5%);
+    }
+    90%{
+        transform: rotateX(20deg);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+#cloudHTop{
+    animation: cloudMove 4s infinite ease-in-out;
+}
+#cloudMTop{
+    animation: cloudMove 3.5s infinite ease-in-out;
+}
+#cloudHMiddle{
+    animation: cloudMove 3.7s infinite ease-in-out;
+}
+#cloudMBottop{
+    animation: cloudMove 4.2s infinite ease-in-out;
+}
+#cloudSBottop{
+    animation: cloudMove 4s infinite ease-in-out;
+}
+
+@keyframes cloudMove {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+#hairMove{
+    animation: hairMove 4s infinite ease-in-out;
+}
+@keyframes hairMove{
+    35%{
+        transform: rotate(-0.1deg);
+    }
+    50%{
+        transform: rotate(0deg); 
+    }
+    70%{
+        transform: rotate(0.2deg);
+    }
+}
+#dressMove1{
+    animation: dressMove 2s infinite ease-in-out;
+}
+#dressMove2{
+    animation: dressMove 2s infinite ease-in-out;
+}
+#skirtRight{
+    animation: dressMove 2s infinite ease-in-out;
+}
+@keyframes dressMove{
+    50%{
+        transform: rotateY(-5deg);
+    }
+}
+#skirtMedio{
+    animation: dressMoveMiddle 2s infinite ease-in-out;
+}
+#skirtLeft{
+    animation: dressMoveMiddle 2s infinite ease-in-out;
+}
+@keyframes dressMoveMiddle{
+    50%{
+        transform: translateY(-0.5%);
+    }
+}

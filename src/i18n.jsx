@@ -22,12 +22,14 @@ const resources = {
       //g
       greeting:"Hi I'm Claudia,",
       //h
+      hi:"Hi",
       //i
       introByMe:"With my experience as a fullstack programmer, I can transform your ideas into reality. From a clean and friendly design for static pages to ambitious and complex web projects.",
       //j
       //k
       //l
       //m
+      myself:"I´m Full Stack Developer",
       //n
       //o
       ocupation:"Full Stack developer",
@@ -36,6 +38,7 @@ const resources = {
       //q
       //r
       //s
+      seeMore:"See more",
       skills:"Skills",
       //t
       //w
@@ -58,9 +61,12 @@ const resources = {
       contactMe:"Contáctame",
       experience:"Experiencia",
       greeting:"Hola Soy Claudia.",
+      hi:"Hola",
       introByMe:"Con mi experiencia como programador fullstack, puedo transformar tus ideas en realidad. Desde un diseño limpio y amigable para páginas estáticas hasta proyectos web ambiciosos y complejos.",
+      myself:"Soy Desarrollador Full Stack ",
       ocupation:"Desarrollador Full Stack",
       projects:"Proyectos",
+      seeMore:"Descubre más",
       skills:"Habilidades",
       welcome: "¡Bienvenido a mi pedazito de web!",
     }
