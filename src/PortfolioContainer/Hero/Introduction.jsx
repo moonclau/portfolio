@@ -7,21 +7,13 @@ function Introduction() {
     const { t } = useTranslation();
     return (
       <div className="font-bold">
-        <div id="title" >
+        <div id="title"  className="top-1/4  lg:top-[40%]">
           <p className="text-2xl">{t("hi")},</p>
-          <h1 className="text-4xl">{t("myself")}</h1> 
+          <h1 className="text-2xl md:w-full md:text-4xl">{t("myself")}</h1> 
+        <h3 className="text-lg">
+          {t("briefIntroduction")}
+        </h3>
         </div>
-      {/* <ScrollLink
-            to="about-me"
-            smooth={true}
-            duration={800}
-            className="absolute mt-8 p-4 bg-blue-500 text-white rounded cursor-pointer"
-          >
-            <p>{t("seeMore")}</p>
-          </ScrollLink> */}
-      {/* <h3 className="text-lg">
-        Con más de 4 años de experiencia construyendo aplicaciones y sitios web dinámicos y eficientes.
-      </h3> */}
       </div>
     );
   }

@@ -8,7 +8,7 @@ function AboutMe() {
       <div className="w-full h-fit flex justify-center">
         <img className="w-2/5 " src={Photo} alt="perfil foto" />
       </div>
-      <div className="ml-20 mr-20">
+      <div className="ml-16 md:ml-20 mr-10 md:mr-20">
         <div className="text-2xl  justify-center text-center font-bold ">
          <h2 className="m-1">
          {t("greeting")}
@@ -17,7 +17,7 @@ function AboutMe() {
           {t("welcome")}
         </h2>
         </div>
-        <div className="w-full text-xl justify-center text-justify">
+        <div className="w-full text-xl justify-center md:text-justify">
           <div>{t("describingMyself")}</div>
           <div className="mt-3">{t("describingMyself1")}</div>
           <div className="mt-3" >{t("describingMyself2")}</div>

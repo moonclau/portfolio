@@ -1,5 +1,6 @@
 import React from 'react';
 import '../assets/ProgressCircle.css';
+import htmlImage from '../../public/images/iconsSkills/html.svg'
 
 function ProgressCircle({ percentage, name, image }) {
   const strokeDasharray = `${percentage}, 100`;
@@ -21,7 +22,8 @@ function ProgressCircle({ percentage, name, image }) {
             a 15.9155 15.9155 0 0 1 0 -31.831"
         />
         
-        <text x="18" y="20.35" className="percentage">{percentage}%</text>
+          <img  x="18" y="20.35" className="percentage" src={htmlImage}/>
+        {/* <text x="18" y="20.35" className="percentage">{percentage}%</text> */}
       </svg>
       <p>{name}</p>
       

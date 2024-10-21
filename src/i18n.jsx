@@ -8,6 +8,7 @@ const resources = {
       //a
       aboutMe:"About me",
       //b
+      briefIntroduction:"With more than 4 years of experience building efficient applications and websites.",
       //c
       carrer:"My professional career",
       certificates:"Certificates",
@@ -53,12 +54,13 @@ const resources = {
     translation: {
       
       aboutMe:"Sobre mi",
-      describingMyself: "A lo largo de mi carrera, he desarrollado una sólida base en PHP, JavaScript y Ruby, manejando frameworks como Laravel, Ruby on Rails, Vue, React JS y Bootstrap. Mis proyectos se centran en la creación de interfaces de usuario intuitivas y funcionales, optimizando la experiencia del usuario y asegurando un rendimiento robusto tanto en el frontend como en el backend.",
-      describingMyself1:"Con una mentalidad orientada a la resolución de problemas, soy experto en transformar ideas en productos digitales, siempre buscando las mejores prácticas en desarrollo, accesibilidad y diseño. Mi pasión por el diseño gráfico me permite tener un enfoque especial en los detalles visuales, usando herramientas como Photoshop e Illustrator para asegurar que cada producto no solo funcione bien, sino que también se vea increíble.",
-      describingMyself2:"Estoy buscando nuevas oportunidades donde pueda colaborar en proyectos desafiantes y aportar mi experiencia en el desarrollo web. Si buscas a alguien comprometido, con una mentalidad creativa y técnica, estaré encantado de ayudarte a convertir tus ideas en realidad.",
+      briefIntroduction:"Con más de 4 años de experiencia construyendo aplicaciones y sitios web eficientes.",
       carrer:"Mi trayectoria profesional",
       certificates:"Certificados",
       contactMe:"Contáctame",
+      describingMyself: "A lo largo de mi carrera, he desarrollado una sólida base en PHP, JavaScript y Ruby, manejando frameworks como Laravel, Ruby on Rails, Vue, React JS y Bootstrap. Mis proyectos se centran en la creación de interfaces de usuario intuitivas y funcionales, optimizando la experiencia del usuario y asegurando un rendimiento robusto tanto en el frontend como en el backend.",
+      describingMyself1:"Con una mentalidad orientada a la resolución de problemas, soy experto en transformar ideas en productos digitales, siempre buscando las mejores prácticas en desarrollo, accesibilidad y diseño. Mi pasión por el diseño gráfico me permite tener un enfoque especial en los detalles visuales, usando herramientas como Photoshop e Illustrator para asegurar que cada producto no solo funcione bien, sino que también se vea increíble.",
+      describingMyself2:"Estoy buscando nuevas oportunidades donde pueda colaborar en proyectos desafiantes y aportar mi experiencia en el desarrollo web. Si buscas a alguien comprometido, con una mentalidad creativa y técnica, estaré encantado de ayudarte a convertir tus ideas en realidad.",
       experience:"Experiencia",
       greeting:"Hola Soy Claudia.",
       hi:"Hola",

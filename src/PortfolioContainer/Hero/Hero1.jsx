@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import Introduction from "./Introduction";
 import { useTranslation } from "react-i18next";
 import { Link as ScrollLink } from "react-scroll";
-
 import { useTheme } from "../../imports/ThemeContext.jsx";
 import Hill1 from "../../../public/images/landscape/colina1.png";
 import Hill2 from "../../../public/images/landscape/colina2.png";
@@ -36,7 +35,10 @@ const Hero = () => {
           <div className="star star4"></div>
           <div className="star star5"></div>
           <div className="forest hill1 "></div>
-          <Introduction />
+          <div className="  ">
+            <Introduction />
+          </div>
+          <div className="night_landscape invisible md:visible">
           <img
             className="absolute"
             src={Hill1}
@@ -61,10 +63,15 @@ const Hero = () => {
             alt="hill center"
             style={{ transform: `translateX(${scrollY * 0.9}px)` }}
           />
+          </div>
+
+          
         </section>
       ) : (
         <section className="day_landscape w-full">
-          <Introduction />
+          <div className="ml-8 mr-8 md:ml-20 md:mr-20">
+            <Introduction />
+          </div>
           <div className="w-full absolute justify-end justify-items-end items-end text-right">
             <svg
               className="w-full"
@@ -114,33 +121,33 @@ const Hero = () => {
                     id="LazoDer"
                     d="M854.46 260.22L933.56 233.08"
                     stroke="white"
-                    stroke-width="5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     id="LazoMedio"
                     d="M882.18 148.83C898.87 176.12 913.43 204.82 934.79 234.4C956.91 265.02 983.29 292.84 1004.63 317.94"
                     stroke="white"
-                    stroke-width="5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     id="LazoIzq"
                     d="M994.33 162L934.36 232.88"
                     stroke="white"
-                    stroke-width="5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     id="lazoAlto"
                     d="M935 232C916.078 264.543 898.45 290.458 885.506 308.531C751.795 495.218 587.386 584.559 544.338 606.835C514.198 622.436 488.549 633.621 471.785 640.556L457 667"
                     stroke="white"
-                    stroke-width="5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </g>
                 <rect
@@ -211,36 +218,36 @@ const Hero = () => {
                     d="M590.08 617.03L546.26 620.4L544.58 610.29L578.28 606.92L590.08 617.03Z"
                     fill="white"
                     stroke="#FAFCFC"
-                    stroke-width="0.5"
-                    stroke-miterlimit="10"
+                    strokeWidth="0.5"
+                    strokeMiterlimit="10"
                   />
                   <path
                     id="dress"
                     d="M577.37 599.5H546.19C543.59 597.88 540.24 594.19 537.76 587.7C533.52 576.57 539.45 565.79 546.19 557.37C554.79 546.62 574.45 549 581.58 557.37C585.99 562.54 587.22 569.77 586.64 579.28C586.04 588.92 581.82 594.83 579.9 599.5H577.37Z"
                     fill="white"
                     stroke="#FAFCFC"
-                    stroke-miterlimit="10"
+                    strokeMiterlimit="10"
                   />
                   <path
                     id="waist"
                     d="M546.19 609.61L578.21 607.93L579.9 599.5H546.19V609.61Z"
                     fill="white"
                     stroke="#FAFCFC"
-                    stroke-miterlimit="10"
+                    strokeMiterlimit="10"
                   />
                   <path
                     id="skirtLeft"
                     d="M546.19 611.3C538.07 614.82 536.38 633.85 534.39 651.75C531.02 682.08 541.3 717.74 544.5 720.85C552.39 728.51 574.91 723.84 583.26 710.74C585.16 707.76 587.58 702.39 583.26 678.72C578.17 650.82 550.43 609.47 546.18 611.31L546.19 611.3Z"
                     fill="white"
                     stroke="#FAFCFC"
-                    stroke-miterlimit="10"
+                    strokeMiterlimit="10"
                   />
                   <path
                     id="skirtMedio"
                     d="M551.32 622.09C556.08 638.1 558.46 646.11 563.12 654.11C580.54 684.05 572.7 712.84 583.34 714.78C588.22 715.67 589.21 709.5 600.19 706.35C613.34 702.58 623.84 708 625.47 704.66C626.6 702.34 622.18 698.38 618.73 694.55C613.42 688.65 609.56 679.39 601.88 660.85C593.83 641.43 584.55 614.84 573.37 609.86C573.21 609.79 572.39 609.45 572.39 609.45L548.8 611.14C548.8 611.14 547.15 612.46 547.4 613.02C548.8 616.2 550.91 620.68 551.33 622.1L551.32 622.09Z"
                     fill="white"
                     stroke="#FAFCFC"
-                    stroke-miterlimit="10"
+                    strokeMiterlimit="10"
                   />
 
                   <g id="skirt">
@@ -249,7 +256,7 @@ const Hero = () => {
                       d="M651.59 703.82C647.17 712.66 673.95 702.81 673.5 698.76C673.21 696.19 658.33 692.02 658.33 692.02L654.96 698.76C654.96 698.76 653.27 700.45 651.59 703.82Z"
                       fill="white"
                       stroke="#FAFCFC"
-                      stroke-miterlimit="10"
+                      strokeMiterlimit="10"
                     />
                     <path
                       id="dressMove1"
@@ -261,7 +268,7 @@ const Hero = () => {
                       d="M622.1 645.68C634.34 658.11 632.51 659.48 645.69 672.64C645.69 672.64 651.05 677.99 660.86 692.86C663.77 697.27 664.8 699.21 664.23 701.29C662.2 708.64 642.36 708.83 638.11 708.87C637.14 708.87 621.28 708.92 609.46 703.81C573.27 688.16 561.24 616.57 574.07 609.44C583.13 604.4 607.43 630.78 622.1 645.67V645.68Z"
                       fill="white"
                       stroke="#FAFCFC"
-                      stroke-miterlimit="10"
+                      strokeMiterlimit="10"
                     />
                   </g>
                   <path
@@ -294,7 +301,7 @@ const Hero = () => {
         className={`absolute w-full h-full flex ${
           isDarkMode
             ? "justify-center justify-items-center text-center items-center"
-            : "md:ml-28 md:top-1/2"
+            : "md:ml-20 md:top-1/2"
         }`}
       >
         {/* className="absolute w-full h-full flex justify-center justify-items-center text-center items-center" */}
@@ -302,7 +309,11 @@ const Hero = () => {
           to="about-me"
           smooth={true}
           duration={800}
-          className=" mt-8 p-4 h-14 bg-blue-500 text-white rounded cursor-pointer"
+          offset={-55}
+          className={` md:mt-8 p-4 h-14 bg-blue-500 text-white rounded cursor-pointer ${
+            isDarkMode
+              ? "mt-52":"mt-80 ml-8 md:ml-0 "}`}
+          
         >
           <p>{t("seeMore")}</p>
         </ScrollLink>

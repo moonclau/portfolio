@@ -1,10 +1,10 @@
 import React from "react";
 import { Link,Events } from "react-scroll";
-import "./NavbarStruct.css";
+import "./Navbar.css";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "../../../imports/ThemeContext";
 
-function NavbarStruct(props) {
+function NavbarDesktop(props) {
   //changed background
   const { isDarkMode } = useTheme();
   //changed languague
@@ -46,9 +46,11 @@ function NavbarStruct(props) {
 
     <div className="navbar w-full md:ml-28 ">
     <div className="md:absolute md:bottom-1 2xl:bottom-28 xl:bottom-5 lg:bottom-2 ">
-      <h1 className="md:pt-10 text-5xl font-name ">Claudia Cruz </h1>
-      <h1 className="mt-5 text-2xl">{t("ocupation")}</h1>
-      <p className="mt-5 w-10/12 mb-10 text-lg">{t("introByMe")}</p>
+      <div className="invisible md:visible">
+      <h1 className="name md:pt-10 text-5xl font-name ">Claudia Cruz </h1>
+      <h1 className="ocupation mt-5 text-2xl">{t("ocupation")}</h1>
+      <p className="introduction mt-5 w-10/12 mb-10 text-lg ">{t("introByMe")}</p>
+      </div>
       <nav>
       <ul className={`${isDarkMode? "menu-profile-dark" : "menu-profile"}`} >
         {menus?.map((menu) => (
@@ -87,4 +89,4 @@ function NavbarStruct(props) {
 </div>
   );
 }
-export default NavbarStruct;
+export default NavbarDesktop;

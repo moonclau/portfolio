@@ -107,19 +107,17 @@ function Skills() {
           <ul className="skills flex">
             {category.skill.map(skill => (
               <li key={category.id}>
-                  <ProgressCircle
+                  {/* <ProgressCircle
                   key={skill.namekill}
                   percentage={skill.percentage}
                   name={skill.namekill}
                   image={skill.image}
-                />
+                /> */}
               </li>
             ))}
           </ul>
         </div>
       ))}
-{/* {htmlImage} */}
-<img src={htmlImage}/>
       </section>
     );
   }
