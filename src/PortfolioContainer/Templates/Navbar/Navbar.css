@@ -27,6 +27,34 @@
     }
   }
 
+  @media screen and (max-width: 1200px) {
+    .name{
+      display:none;
+    }
+  }
+
+  @media screen and (max-width: 940px) {
+    .ocupation{
+      display:none;
+    }
+  }
+  @media screen and (max-width: 855px) {
+    .introduction{
+      display:none;
+    }
+    .menu-desktop{
+      justify-content: center;
+      align-items: center;
+      height: fit-content;
+      align-self: center;
+      
+    }
+  }
+  @media screen and (max-width: 100px) {
+    .name{
+      display:none;
+    }
+  }
   @media screen and (max-height: 450px) {
     .ocupation{
       display:none;

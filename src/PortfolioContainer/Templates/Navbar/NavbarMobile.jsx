@@ -58,7 +58,6 @@ function NavbarMobile(props) {
               onSetActive={props.setActiveScroll}
               onClick={props.setShowMenu}
             >
-                {/* {} */}
               <p
                 className={`text-lg leanding-5  group-hover:text-2xl ${
                   isDarkMode

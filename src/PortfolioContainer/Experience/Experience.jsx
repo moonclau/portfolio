@@ -44,8 +44,8 @@ function Experience() {
     },
   ];
   return (
-    <section id="experience" className="w-full md:m-5 md:mt-20 ">
-      <ul className="w-11/12 ml-10">
+    <section id="experience" className="w-full mr-5 md:m-5 md:mt-20  ">
+      <ul className=" w-4/5 md:w-11/12 ml-10">
         {dataExperience?.map((job) => (
           <li key={job.id} className={`flex flex-row group mb-5 rounded-md pa-2 ${isDarkMode ? "hover:bg-slate-900/50  " : "hover:bg-sky-400/20"} `}>
             <div className="basis-1/5">
@@ -75,7 +75,7 @@ function Experience() {
               >
                 {job.description}
               </p>
-              <ul className="grid grid-cols-3 md:grid-cols-5 gap-4 mt-2 mr-7 w-4/5 mb-5">
+              <ul className="grid grid-cols-2 md:grid-cols-5 gap-4 mt-2 mr-7 w-4/5 mb-5">
                 {job.technologies?.map((tecnology, index) => (
                   <li
                     key={job.id + index}
@@ -93,7 +93,7 @@ function Experience() {
           </li>
         ))}
       </ul>
-        <a className="text-2xl font-semibold md:ml-20 flex group hover:text-[#3780e6]" href="#project">
+        <a className="text-2xl font-semibold ml-20 flex group hover:text-[#3780e6]" href="#project">
           Ver más <MdArrowOutward className="ml-2 group-hover:animate-bounce" />
         </a>
     </section>

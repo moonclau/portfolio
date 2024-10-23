@@ -140,7 +140,7 @@ const Template = () => {
           className={`left-0 ${
             isHeroActive
               ? "invisible md:visible"
-              : " fixed  bottom-10 md:bottom-0 "
+              : "fixed  bottom-10 md:bottom-0 "
           }`}
         >
           <SocialMedia />
@@ -160,9 +160,9 @@ const Template = () => {
           <Element name="experience">
             <Experience />
           </Element>
-          <Element name="projects">
+          {/* <Element name="projects">
             <Projects />
-          </Element>
+          </Element> */}
 
           <Element name="skills">
             <Skills />

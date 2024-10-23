@@ -44,15 +44,16 @@ function NavbarDesktop(props) {
   ];
   return (
 
-    <div className="navbar w-full md:ml-28 ">
-    <div className="md:absolute md:bottom-1 2xl:bottom-28 xl:bottom-5 lg:bottom-2 ">
+    <div className=" w-full md:ml-28 justify-center justify-items-center align-middle  ">
+    <div className="menu-desktop md:absolute bottom-1">
+    {/* md:bottom-1 2xl:bottom-28 xl:bottom-5 lg:bottom-2  */}
       <div className="invisible md:visible">
       <h1 className="name md:pt-10 text-5xl font-name ">Claudia Cruz </h1>
       <h1 className="ocupation mt-5 text-2xl">{t("ocupation")}</h1>
       <p className="introduction mt-5 w-10/12 mb-10 text-lg ">{t("introByMe")}</p>
       </div>
       <nav>
-      <ul className={`${isDarkMode? "menu-profile-dark" : "menu-profile"}`} >
+      <ul className={` ${isDarkMode? "menu-profile-dark" : "menu-profile"}`} >
         {menus?.map((menu) => (
           <li key={menu.id}>
           <Link
