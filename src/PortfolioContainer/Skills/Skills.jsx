@@ -1,5 +1,4 @@
 import React from "react";
-import ProgressCircle from "../../imports/ProgressCircle.jsx";
 import "./Skills.css";
 import {dataTecnicalSkills} from "../../data/tecnicalSkills.js";
 import {tecnicalSkills} from "../../data/tecnical.js"

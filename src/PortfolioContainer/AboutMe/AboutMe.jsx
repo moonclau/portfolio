@@ -1,21 +1,21 @@
 import { useTranslation } from "react-i18next";
-import Photo from "../../../public/images/perfil.png";
+import Photo from "../../assets/images/perfil.png";
 function AboutMe() {
   //changed languague
   const { t } = useTranslation();
   return (
     <section id="about-me" className="w-full grid mt-20">
       <div className="w-full h-fit flex justify-center">
-        <img className="w-2/5 " src={Photo} alt="perfil foto" />
+        <img className="w-2/5 mb-5" src={Photo} alt="perfil foto" />
       </div>
       <div className="ml-16 md:ml-20 mr-10 md:mr-20">
         <div className="text-2xl  justify-center text-center font-bold ">
-         <h2 className="m-1">
+         <h2 className="m-1 mb-5">
          {t("greeting")}
         </h2> 
-        <h2 className="mb-5">
+        {/* <h2 className="mb-5">
           {t("welcome")}
-        </h2>
+        </h2> */}
         </div>
         <div className="w-full text-xl justify-center md:text-justify">
           <div>{t("describingMyself")}</div>

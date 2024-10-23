@@ -1,9 +1,9 @@
-import AWS from "../../public/images/iconsSkills/aws.svg";
-import DigitalOcean from "../../public/images/iconsSkills/DigitalOcean.svg";
-import Ubuntu from '../../public/images/iconsSkills/ubuntu.svg';
-import Windows from "../../public/images/iconsSkills/windows.svg";
-import MacOs from "../../public/images/iconsSkills/macOs.svg";
-import Scrum from "../../public/images/iconsSkills/scrum.svg";
+import AWS from "../assets/images/iconsSkills/aws.svg";
+import DigitalOcean from "../assets/images/iconsSkills/DigitalOcean.svg";
+import Ubuntu from '../assets/images/iconsSkills/ubuntu.svg';
+import Windows from "../assets/images/iconsSkills/windows.svg";
+import MacOs from "../assets/images/iconsSkills/macOs.svg";
+import Scrum from "../assets/images/iconsSkills/scrum.svg";
 
 export const tecnicalSkills = [
   {

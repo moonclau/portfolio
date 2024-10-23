@@ -3,45 +3,14 @@ import { Link,Events } from "react-scroll";
 import "./Navbar.css";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "../../../imports/ThemeContext";
+import {menus} from "../../../data/menu.js";
 
 function NavbarMobile(props) {
     //changed background
     const { isDarkMode } = useTheme();
     //changed languague
     const { t } = useTranslation();
-  //menu section names
-  const menus = [
-    {
-      id: 1,
-      name: t("aboutMe"),
-      link: "about-me",
-    },
-    {
-      id: 2,
-      name: t("experience"),
-      link: "experience",
-    },
-    {
-      id: 3,
-      name: t("projects"),
-      link: "projects",
-    },
-    {
-      id: 4,
-      name: t("skills"),
-      link: "skills",
-    },
-    {
-      id: 5,
-      name: t("certificates"),
-      link: "certificates",
-    },
-    {
-      id: 6,
-      name: t("contactMe"),
-      link: "contactMe",
-    },
-  ];
+  
   return (
     <nav className="relative flex justify-center">
       <ul>
@@ -65,7 +34,7 @@ function NavbarMobile(props) {
                     : "text-slate-700 group-hover:text-[#3780e6] "
                 }`}
               >
-                {menu?.name}
+                {t(menu?.name)}
               </p>
             </Link>
           </li>

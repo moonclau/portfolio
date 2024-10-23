@@ -1,9 +1,9 @@
-import selfTaught from "../../public/images/iconsSkills/autodidacta.svg";
-import empathy from "../../public/images/iconsSkills/empatia.svg";
-import honest from '../../public/images/iconsSkills/honest.svg';
-import positive from "../../public/images/iconsSkills/positive.svg";
-import responsable from "../../public/images/iconsSkills/responsabilidad.svg";
-import teamWork from "../../public/images/iconsSkills/teamwork.svg";
+import selfTaught from "../assets/images/iconsSkills/autodidacta.svg";
+import empathy from "../assets/images/iconsSkills/empatia.svg";
+import honest from '../assets/images/iconsSkills/honest.svg';
+import positive from "../assets/images/iconsSkills/positive.svg";
+import responsable from "../assets/images/iconsSkills/responsabilidad.svg";
+import teamWork from "../assets/images/iconsSkills/teamwork.svg";
 
 export const softSkills = [
   {

@@ -4,10 +4,10 @@ import Introduction from "./Introduction";
 import { useTranslation } from "react-i18next";
 import { Link as ScrollLink } from "react-scroll";
 import { useTheme } from "../../imports/ThemeContext.jsx";
-import Hill1 from "../../../public/images/landscape/colina1.png";
-import Hill2 from "../../../public/images/landscape/colina2.png";
-import Hill3 from "../../../public/images/landscape/colina3.png";
-import women from "../../../public/images/landscape/mujer.png";
+import Hill1 from "../../assets/images/landscape/colina1.png";
+import Hill2 from "../../assets/images/landscape/colina2.png";
+import Hill3 from "../../assets/images/landscape/colina3.png";
+import women from "../../assets/images/landscape/mujer.png";
 const Hero = () => {
   //changed background
   const { isDarkMode } = useTheme();

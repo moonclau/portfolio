@@ -17,7 +17,7 @@ import Skills from "../Skills/Skills.jsx";
 import { Element, Link } from "react-scroll";
 import Hero from "../Hero/Hero1.jsx";
 import { GiHamburgerMenu } from "react-icons/gi";
-
+import Certificates from "../Certificates/Certificates.jsx";
 const Template = () => {
   //Change background
   const { isDarkMode, toggleTheme } = useTheme();
@@ -35,6 +35,8 @@ const Template = () => {
   const [offset, setOffset] = useState(0);
   // change language
   const changeLanguage = () => {
+
+    console.log('changeLanguaje');
     if (userLanguage === "es") {
       setUserLanguage("en"); // update language
     } else {
@@ -43,16 +45,9 @@ const Template = () => {
     i18n.changeLanguage(userLanguage); // changed with i18n
   };
 
-  //en prueba
-  useEffect(() => {
-    let ancho = window.innerWidth;
-    let alto = window.innerHeight;
-    // console.log('ancho',ancho);
-    // console.log('alto',alto);
-  }, []);
-
   // diplay menu .
   const handleMenuMobile = () => {
+    console.log('menuMobile');
     setShowMobileMenu(!showMobileMenu);
   };
 
@@ -167,9 +162,9 @@ const Template = () => {
           <Element name="skills">
             <Skills />
           </Element>
-          {/* <Element name="certificates">
+          <Element name="certificates">
              <Certificates />
-           </Element> */}
+           </Element>
           {/* <Element name="contactMe">
              <contactMe />
            </Element> */}

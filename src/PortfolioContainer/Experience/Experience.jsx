@@ -1,51 +1,17 @@
 import { useTranslation } from "react-i18next";
 import { useTheme } from "../../imports/ThemeContext";
 import { MdArrowOutward } from "react-icons/md";
-
+import { dataExperience } from "../../data/dataExperience";
 function Experience() {
   //changed languague
   const { t } = useTranslation();
   //changed background
   const { isDarkMode } = useTheme();
   //informations about jobs experience
-  const dataExperience = [
-    {
-      id: 1,
-      title: "Aerobit S.A. de C.V.",
-      link: "https://aerobit.com/",
-      date: "2021-2024",
-      subtitle: t("ocupation"),
-      description:
-        "Atención al cliente, gestionando y resolviendo tickets para solucionar problemas y recolectar requerimientos para su implementación en actualizaciones. Colaboración activa en el mantenimiento y actualización de diversas plataformas web, asegurando un rendimiento óptimo y una experiencia de usuario mejorada.",
-      technologies: [
-        "php",
-        "ruby",
-        "css",
-        "javascript",
-        "laravel",
-        "ruby on rails",
-        "vue",
-        "reactJS",
-        "quasar",
-        "bootstrap",
-        "postgress",
-        "mysql",
-      ],
-    },
-    {
-      id: 2,
-      title: "Amats Electric S.A. de C.V.",
-      link: "https://www.amats.com.mx/",
-      subtitle: "Auxiliar de Marketing Digital",
-      date: "2020-2021",
-      description:
-        "Creación y publicación de contenido relevante para atraer leads en diferentes redes sociales. Además de la colaboración en Mantenimiento y actualización de la página web",
-      technologies: ["php", "css", "javascript", "laravel", "bootstrap"],
-    },
-  ];
+  
   return (
     <section id="experience" className="w-full mr-5 md:m-5 md:mt-20  ">
-      <ul className=" w-4/5 md:w-11/12 ml-10">
+      <ul className="w-4/5 md:w-11/12 ml-10">
         {dataExperience?.map((job) => (
           <li key={job.id} className={`flex flex-row group mb-5 rounded-md pa-2 ${isDarkMode ? "hover:bg-slate-900/50  " : "hover:bg-sky-400/20"} `}>
             <div className="basis-1/5">
@@ -66,14 +32,14 @@ function Experience() {
                   isDarkMode ? "text-gray-300 " : "text-slate-900"
                 }`}
               >
-                {job.subtitle}
+                {t(job.subtitle)}
               </h4>
               <p
                 className={`w-11/12 mb-3 ${
                   isDarkMode ? "text-gray-300 " : "text-slate-900"
                 }`}
               >
-                {job.description}
+                {t(job.description)}
               </p>
               <ul className="grid grid-cols-2 md:grid-cols-5 gap-4 mt-2 mr-7 w-4/5 mb-5">
                 {job.technologies?.map((tecnology, index) => (
