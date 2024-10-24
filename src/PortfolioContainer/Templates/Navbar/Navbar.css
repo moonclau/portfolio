@@ -1,0 +1,68 @@
+  .menu-profile-dark a.active {
+    span{
+     background-color: white;
+     width: 48px;   
+    }
+    p{
+        color: white;
+        font-size: 24px;
+        line-height: 32px;
+    }
+  }
+  .menu-profile a.active {
+    span{
+     background-color: #3780e6;
+     width: 48px;   
+    }
+    p{
+        color: #3780e6;
+        font-size: 24px;
+        line-height: 32px;
+    }
+  }
+
+  @media screen and (max-height: 600px) {
+    .introduction{
+      display:none;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .name{
+      display:none;
+    }
+  }
+
+  @media screen and (max-width: 940px) {
+    .ocupation{
+      display:none;
+    }
+  }
+  @media screen and (max-width: 855px) {
+    .introduction{
+      display:none;
+    }
+    .menu-desktop{
+      justify-content: center;
+      align-items: center;
+      height: fit-content;
+      align-self: center;
+      
+    }
+  }
+  @media screen and (max-width: 100px) {
+    .name{
+      display:none;
+    }
+  }
+  @media screen and (max-height: 450px) {
+    .ocupation{
+      display:none;
+    }
+  }
+
+  @media screen and (max-height: 430px) {
+    .name{
+      display:none;
+    }
+  }

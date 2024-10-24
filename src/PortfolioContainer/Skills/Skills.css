@@ -1,0 +1,11 @@
+.file{
+    background-image: url("../../assets/images/iconsSkills/close.svg");
+    background-repeat: no-repeat;
+}
+.file:hover{
+    background-image: url("../../assets/images/iconsSkills//open.svg");
+    background-repeat: no-repeat;
+    width: 5.5rem ;
+    height: 5rem ;
+
+}

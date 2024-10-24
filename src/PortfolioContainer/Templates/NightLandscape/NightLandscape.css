@@ -1,0 +1,38 @@
+.night-sky {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #0d1b2a, #1b263b); /* Gradiente para el cielo nocturno */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .firefly {
+    position: absolute;
+    background: #ffeb3b;
+    border-radius: 50%;
+    box-shadow: 0 0 6px 2px #ffeb3b;
+    width: 6px;
+    height: 6px;
+    animation: move 5s linear infinite, flicker 1.5s ease-in-out infinite;
+  }
+  
+  /* Generar múltiples destellos en posiciones aleatorias */
+  .firefly:nth-child(1) { top: 20%; left: 15%; animation-delay: 0s; }
+  .firefly:nth-child(2) { top: 30%; left: 70%; animation-delay: 1.5s; }
+  .firefly:nth-child(3) { top: 50%; left: 40%; animation-delay: 3s; }
+  .firefly:nth-child(4) { top: 65%; left: 80%; animation-delay: 2.5s; }
+  .firefly:nth-child(5) { top: 80%; left: 30%; animation-delay: 4s; }
+  .firefly:nth-child(6) { top: 90%; left: 50%; animation-delay: 3.5s; }
+  
+  /* Animación de parpadeo */
+  @keyframes flicker {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+  
+  /* Animación de movimiento */
+  @keyframes move {
+    0% { transform: translateY(0) translateX(0); }
+    100% { transform: translateY(-20px) translateX(10px); }
+  }
+  

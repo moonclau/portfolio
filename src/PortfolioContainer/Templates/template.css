@@ -1,0 +1,50 @@
+/* .este {
+    line-height: 1em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    border: 1px solid;
+  } */
+
+.menu-visible{
+  animation-name: menu-animation 4s normal ;
+}
+@keyframes menu-animation {
+  from{
+    opacity: 0;
+    scale: 25%;
+  }
+  to{
+    opacity: 1;
+    scale:100%;
+  }
+}
+.scroller-dark{
+  scrollbar-color: gray #02335c;
+}
+.scroller-white{
+  scrollbar-color: gray #b8e5fa;
+}
+.icon-color-dark {
+ .cd{
+  fill: #FFFFFF !important;
+ }
+ .slash{
+  fill: #FFFFFF !important;
+ }
+ .e{
+  fill: #FFFFFF !important;
+ }
+ .v{
+  fill: #FFFFFF !important;
+ }
+ .Vector_right{
+  fill: #FFFFFF !important;
+ }
+ .Vector_left{
+  fill: #FFFFFF !important;
+ }
+ .cursor{
+  fill: #FFFFFF !important;
+ }
+}
