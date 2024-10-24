@@ -2,7 +2,7 @@ import htmlImage from "../assets/images/iconsSkills/html.svg";
 import Css from "../assets/images/iconsSkills/CSS.svg";
 import JS from '../assets/images/iconsSkills/js.svg';
 import Bootstrap from "../assets/images/iconsSkills/bootstrap.svg";
-import Tailwind from "../assets/images/iconsSkills/Tailwind.svg";
+import Tailwind from "../assets/images/iconsSkills/tailwind.svg";
 import React from "../assets/images/iconsSkills/reactjs.svg";
 import Vue from "../assets/images/iconsSkills/vueJs.svg";
 import Laravel from "../assets/images/iconsSkills/Laravel.svg";
