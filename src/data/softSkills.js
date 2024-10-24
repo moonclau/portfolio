@@ -3,7 +3,7 @@ import empathy from "../assets/images/iconsSkills/empatia.svg";
 import honest from '../assets/images/iconsSkills/honest.svg';
 import positive from "../assets/images/iconsSkills/positive.svg";
 import responsable from "../assets/images/iconsSkills/responsabilidad.svg";
-import teamWork from "../assets/images/iconsSkills/teamwork.svg";
+import teamWork from "../assets/images/iconsSkills/teamWork.svg";
 
 export const softSkills = [
   {
