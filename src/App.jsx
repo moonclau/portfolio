@@ -8,7 +8,7 @@ function App() {
   return (
     <div className='app'>
       <ThemeProvider>
-        <Routes basename="/portfolio">
+        <Routes >
           <Route path="/" element={<Template />}>
           </Route>
         </Routes> 
