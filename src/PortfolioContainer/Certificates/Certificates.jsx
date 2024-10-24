@@ -7,7 +7,7 @@ import PDFAWSAccreditationTechnical from "../../assets/pdf/Certificates/Accredit
 import NIST from "../../assets/images/certificates/Nist Cybersecurity.jpg";
 import NISTPDF from "../../assets/pdf/Certificates/NIST.pdf";
 import SDLC from "../../assets/images/certificates/sdlc.jpg";
-import SDLCPDF from "../../assets/pdf/certificates/SDLC.pdf";
+import SDLCPDF from "../../assets/pdf/Certificates/SDLC.pdf";
 
 function Certificates() {
   //changed background
