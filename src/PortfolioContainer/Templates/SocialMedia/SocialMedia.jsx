@@ -14,7 +14,6 @@ const SocialMedia = () => {
                 
                 <a href="mailto:claudiai.cruzhz@gmail.com" className="" >
                 </a>
-                <a href="mailto:elcorreoquequieres@correo.com">Aquí el texto que quieras</a>
                 <IoMdMail className="mb-3 size-7 hover:text-[#3780e6]"/>
                 
                 <a href="#" className="" target="_blank">
