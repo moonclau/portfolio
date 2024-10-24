@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../../../../public/images/logo.svg";
+import Logo from "../../../assets/images/logo.svg";
 import { NavLink } from "react-router-dom";
 import { TiThMenu } from "react-icons/ti";
 

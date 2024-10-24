@@ -1,5 +1,5 @@
 import "./home.css";
-import perfilFoto from "./../../../public/images/perfilfoto.png";
+import perfilFoto from "../../assets/images/perfilfoto.png";
 // import { FaLinkedin,MdOutlineWavingHand,FaGithub } from "react-icons/fa";
 // import { TypeAnimation } from "react-type-animation";
 
