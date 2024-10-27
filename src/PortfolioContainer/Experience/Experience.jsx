@@ -2,12 +2,13 @@ import { useTranslation } from "react-i18next";
 import { useTheme } from "../../imports/ThemeContext";
 import { MdArrowOutward } from "react-icons/md";
 import { dataExperience } from "../../data/dataExperience";
+import CvPdf from "../../assets/pdf/Certificates/ClaudiaCruz.pdf";
+
 function Experience() {
   //changed languague
   const { t } = useTranslation();
   //changed background
   const { isDarkMode } = useTheme();
-  //informations about jobs experience
   
   return (
     <section id="experience" className="w-full mr-5 md:m-5 md:mt-20  ">
@@ -59,7 +60,7 @@ function Experience() {
           </li>
         ))}
       </ul>
-        <a className="text-2xl font-semibold ml-20 flex group hover:text-[#3780e6]" href="#project">
+        <a className="text-2xl font-semibold ml-20 mb-20 flex group hover:text-[#3780e6]" href={CvPdf}>
           Ver más <MdArrowOutward className="ml-2 group-hover:animate-bounce" />
         </a>
     </section>

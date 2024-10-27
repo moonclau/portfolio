@@ -1,6 +1,7 @@
 import { FaLinkedin ,FaFileCsv} from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { FaGithubSquare } from "react-icons/fa";
+import CvPdf from "../../../assets/pdf/Certificates/ClaudiaCruz.pdf";
 const SocialMedia = () => {
     return (
         <div className="w-7 mb:ml-5 mb:mr-2">
@@ -15,9 +16,9 @@ const SocialMedia = () => {
                     <IoMdMail className="mb-3 size-7 hover:text-[#3780e6]"/>
                 </a>
                 
-                <a href="#" className="" target="_blank">
+                <a href={CvPdf} className="" target="_blank">
+                    <FaFileCsv className="size-7 hover:text-[#3780e6]"/>
                 </a>
-                <FaFileCsv className="size-7 hover:text-[#3780e6]"/>
             </div>
         </div>
         
